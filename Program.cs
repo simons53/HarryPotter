@@ -24,6 +24,8 @@ namespace HarryPotter
 
         public string FavoriteSpell { get; set; }
 
+        public string Fullname() => $"{FirstName} {MiddleName} {LastName}"; 
+
         public Character()
         {
             Id = 0;
@@ -49,10 +51,6 @@ namespace HarryPotter
             return $"{Id} {FirstName} {MiddleName} {LastName} -- Recognizable Feature: {RecognizableFeature} | Favorite Spell: {FavoriteSpell}"; 
         }
 
-        public string Fullname()
-        {
-            return $"{FirstName} {MiddleName} {LastName}";
-        }
     }
 
     class Program
