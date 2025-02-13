@@ -2,7 +2,7 @@
 
 namespace HarryPotter
 {
-    interface GoldenTrio
+    interface IGoldenTrio
     {
         int Id { get; set; }
         string FirstName { get; set; }
@@ -12,7 +12,7 @@ namespace HarryPotter
     }
 
 
-    class Character : GoldenTrio
+    class Character : IGoldenTrio
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
